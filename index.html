@@ -14,7 +14,7 @@
          {{list}} <span @click="removeToDo(index)"> X </span>
       </li>
     </ol>
-    <input type="text" placeholder="inserisci qua il nuovo elemento" v-model="newItem">
+    <input type="text" placeholder="inserisci qua il nuovo elemento" v-model="newItem" v-on:keyup.13="submit" >
     <button type="button" name="button" @click="addToDo" >Add item</button>
   </div>
 

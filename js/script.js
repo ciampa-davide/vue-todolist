@@ -22,7 +22,11 @@ var app = new Vue(
 
       removeToDo: function(index){
         console.log(index);
-        this.list.splice(index);
+        this.list.splice(index, 1);
+      },
+
+      submit: function(){
+        this.list.push(this.newItem);
       }
 
     }
