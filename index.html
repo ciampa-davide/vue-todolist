@@ -10,8 +10,8 @@
   <div id="root">
     <h1>Lista di cose da fare!</h1>
     <ol>
-      <li v-for="list in list">
-         {{list}} <span> X </span>
+      <li v-for="(list, index) in list">
+         {{list}} <span @click="removeToDo(index)"> X </span>
       </li>
     </ol>
     <input type="text" placeholder="inserisci qua il nuovo elemento" v-model="newItem">
