@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title></title>
+  </head>
+  <body>
+
+  <div id="root">
+    <h1>Lista di cose da fare!</h1>
+    <ol>
+      <li v-for="list in list">
+         {{list}} <span> X </span>
+      </li>
+    </ol>
+    <input type="text" placeholder="inserisci qua il nuovo elemento" v-model="newItem">
+    <button type="button" name="button" @click="addToDo" >Add item</button>
+  </div>
+
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
